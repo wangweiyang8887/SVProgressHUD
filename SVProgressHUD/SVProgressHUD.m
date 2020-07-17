@@ -866,7 +866,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
             } else {
                 strongSelf.imageView.image = image;
             }
-            strongSelf.imageView.hidden = NO;
+            strongSelf.imageView.hidden = image ? NO : YES;
             
             // Update text
             strongSelf.statusLabel.hidden = status.length == 0;
